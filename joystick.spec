@@ -5,11 +5,6 @@ Version:	1.2.15
 Release:	1
 License:	GPL
 Group:		Applications
-Group(de):	Applikationen
-Group(es):	Aplicaciones
-Group(pl):	Aplikacje
-Group(pt):	Aplicações
-Group(pt_BR):	Aplicações
 Source0:	ftp://ftp.suse.cz/pub/development/joystick/%{name}-%{version}.tar.gz
 URL:		http://www.suse.cz/development/joystick/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
