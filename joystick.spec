@@ -4,8 +4,12 @@ Name:		joystick
 Version:	1.2.15
 Release:	1
 License:	GPL
-Group:		Utilities
-Group(pl):	Narzêdzia
+Group:		Applications
+Group(de):	Applikationen
+Group(es):	Aplicaciones
+Group(pl):	Aplikacje
+Group(pt):	Aplicações
+Group(pt_BR):	Aplicações
 Source0:	ftp://ftp.suse.cz/pub/development/joystick/%{name}-%{version}.tar.gz
 URL:		http://www.suse.cz/development/joystick/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -15,6 +19,10 @@ This package includes utilities for use with Linux joystick driver:
 - jstest
 - jscal
 - jsattach
+
+%description -l pl
+Ten pakiet zawiera narzêdzia do u¿ywania z linuksowym sterownikiem
+joysticka: jstest, jscal, jsattach.
 
 %prep
 %setup -q
