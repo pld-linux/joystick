@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications
 Source0:	ftp://ftp.suse.cz/pub/development/joystick/%{name}-%{version}.tar.gz
+# Source0-md5:	023500eb6986e1a94aa1a0c30af729c2
 URL:		http://www.suse.cz/development/joystick/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
