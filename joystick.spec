@@ -1,4 +1,5 @@
-Summary:	Joystick utilities 
+Summary:	Joystick utilities
+Summary(pl):	Narzêdzia do obs³ugi joysticka
 Name:		joystick
 Version:	1.2.15
 Release:	1
@@ -19,19 +20,17 @@ This package includes utilities for use with Linux joystick driver:
 %setup -q
 
 %build
-%{__make} jstest CFLAGS="$RPM_OPT_FLAGS"
-%{__make} jscal CFLAGS="$RPM_OPT_FLAGS"
-%{__make} jsattach CFLAGS="$RPM_OPT_FLAGS"
+%{__make} jstest CFLAGS="%{rpmcflags}"
+%{__make} jscal CFLAGS="%{rpmcflags}"
+%{__make} jsattach CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
-strip jstest jscal jsattach
 install jstest jscal jsattach $RPM_BUILD_ROOT%{_bindir}
 install *.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/*
 gzip -9nf *.txt || :
 
 %clean
