@@ -2,7 +2,7 @@ Summary:	Joystick utilities
 Summary(pl):	Narzêdzia do obs³ugi joysticka
 Name:		joystick
 Version:	1.2.15
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications
 Source0:	ftp://ftp.suse.cz/pub/development/joystick/%{name}-%{version}.tar.gz
@@ -24,14 +24,14 @@ joysticka: jstest, jscal, jsattach.
 %setup -q
 
 %build
-%{__make} jstest CFLAGS="%{rpmcflags}"
-%{__make} jscal CFLAGS="%{rpmcflags}"
-%{__make} jsattach CFLAGS="%{rpmcflags}"
+%{__make} jstest jscal jsattach \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+
 install jstest jscal jsattach $RPM_BUILD_ROOT%{_bindir}
 install *.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
