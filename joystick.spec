@@ -19,9 +19,9 @@ This package includes utilities for use with Linux joystick driver:
 %setup -q
 
 %build
-make jstest CFLAGS="$RPM_OPT_FLAGS"
-make jscal CFLAGS="$RPM_OPT_FLAGS"
-make jsattach CFLAGS="$RPM_OPT_FLAGS"
+%{__make} jstest CFLAGS="$RPM_OPT_FLAGS"
+%{__make} jscal CFLAGS="$RPM_OPT_FLAGS"
+%{__make} jsattach CFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
