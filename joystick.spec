@@ -1,6 +1,6 @@
 %define		_snap	20060430
 Summary:	Joystick utilities
-Summary(pl):	Narzêdzia do obs³ugi joysticka
+Summary(pl.UTF-8):   NarzÄ™dzia do obsÅ‚ugi joysticka
 Name:		joystick
 Version:	1.2.15
 Release:	2.%{_snap}.1
@@ -20,8 +20,8 @@ This package includes utilities for use with Linux joystick driver:
 - ffset
 - fftest
 
-%description -l pl
-Ten pakiet zawiera narzêdzia do u¿ywania z linuksowym sterownikiem
+%description -l pl.UTF-8
+Ten pakiet zawiera narzÄ™dzia do uÅ¼ywania z linuksowym sterownikiem
 joysticka:
 - jstest
 - jscal
