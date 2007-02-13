@@ -1,6 +1,6 @@
 %define		_snap	20060430
 Summary:	Joystick utilities
-Summary(pl.UTF-8):   Narzędzia do obsługi joysticka
+Summary(pl.UTF-8):	Narzędzia do obsługi joysticka
 Name:		joystick
 Version:	1.2.15
 Release:	2.%{_snap}.1
