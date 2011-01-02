@@ -3,7 +3,8 @@ Summary:	Joystick utilities
 Summary(pl.UTF-8):	Narzędzia do obsługi joysticka
 Name:		joystick
 Version:	1.2.15
-Release:	2.%{_snap}.1
+Patch0:		%{name}-mapping.patch
+Release:	2.%{_snap}.2
 License:	GPL
 Group:		Applications
 Source0:	%{name}-%{_snap}.tar.gz
@@ -32,6 +33,7 @@ joysticka:
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1
 
 %build
 %{__make} jstest jscal inputattach evtest ffset fftest\
